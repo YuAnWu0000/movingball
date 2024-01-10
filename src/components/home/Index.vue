@@ -15,6 +15,7 @@ import Grid from './Grid.vue';
   height: -moz-fill-available;
   background-color: rgb(214, 214, 214);
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 </style>

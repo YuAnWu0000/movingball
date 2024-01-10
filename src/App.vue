@@ -5,7 +5,6 @@
 </template>
 
 <script setup>
-// import HelloWorld from './components/HelloWorld.vue';
 import Navbar from './components/common/Navbar.vue';
 import Home from './components/home/Index.vue';
 </script>

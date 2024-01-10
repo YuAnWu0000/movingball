@@ -9,7 +9,9 @@ const count = ref(0)
 
 <style scoped>
 .navbar {
-
+  width: 100%;
+  height: 3rem;
+  background-color: #ffffff;
 }
 </style>
   

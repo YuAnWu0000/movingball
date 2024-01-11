@@ -16,14 +16,11 @@ const props = defineProps({
   parentKey: String,
 });
 const { keyMap, setActiveMenu } = useSideMenuStore();
-const isOpen = ref(false);
+const isOpen = ref(props.menuData.key === keyMap[props.parentKey]);
 const toggleMenu = () => {
-  isOpen.value = isHL.value;
-  isOpen.value = !isOpen.value;
-  if (isOpen.value)
+  isOpen.value = !isHL.value;
+  if (!isHL.value)
     setActiveMenu(props.parentKey, props.menuData.key);
-  console.log('keyMap: ', keyMap);
-  console.log('nowKey: ', props.menuData.key);
 }
 const isHL = computed(() => isOpen.value && props.menuData.key === keyMap[props.parentKey])
 </script>

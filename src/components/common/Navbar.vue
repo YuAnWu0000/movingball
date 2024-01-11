@@ -5,7 +5,7 @@
     <div v-if="showSideMenu" class="side-menu-mask">
       <div class="side-menu-blank" @click="toggleSideMenu()"></div>
         <div class="side-menu-wrapper">
-          <Menu v-for="item in data" :key="`menu${item.key}`" :menuData="item" parentKey="customKey"/>
+          <Menu v-for="item in menuDatas" :key="`menu${item.key}`" :menuData="item" parentKey="customKey"/>
         </div>
       </div>
     </Transition>
@@ -15,7 +15,7 @@
 import { ref } from 'vue';
 import Menu from './Menu.vue';
 
-const data = ref([
+const menuDatas = ref([
   {
     key: "64f",
     text: "好喝黑糖",
@@ -117,6 +117,7 @@ const toggleSideMenu = () => {
 }
 .navbar {
   width: 100%;
+  max-width: 144rem;
   height: 3rem;
   position: fixed;
   z-index: 999;

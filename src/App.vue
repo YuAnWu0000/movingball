@@ -1,5 +1,4 @@
 <template>
-  <!-- <HelloWorld msg="Vite + Vue Zachary" /> -->
   <Navbar />
   <Home />
 </template>

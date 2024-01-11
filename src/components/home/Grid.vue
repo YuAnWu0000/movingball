@@ -15,7 +15,9 @@ const ballNumber = ref(4);
 // You can modify to 100
 // $ball-number: 100;
 $ball-number: 4;
-$start-point-list: (); // the length of this list equals to $ball-number
+// The length of this list equals to $ball-number.
+// You can either declare your multiple start points at here or append them in the for loop 
+$start-point-list: ();
 $end-point: translate(0, 0);
 
 @for $i from 1 through $ball-number {

@@ -11,9 +11,8 @@ import Grid from './Grid.vue';
 <style lang="scss" scoped>
 .home {
   width: 100%;
-  height: -webkit-fill-available;
-  height: -moz-fill-available;
-  background-color: rgb(214, 214, 214);
+  height: 100%;
+  background-color: #d6d6d6;
   display: flex;
   justify-content: center;
   align-items: center;
